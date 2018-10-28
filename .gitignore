@@ -1,0 +1,7 @@
+.vscode
+.ipynb_checkpoints
+preprocess
+venv
+.gitattributes
+DataBase.ipynb
+app/__pycache__

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class= 'container'>
+<h2>Select a model to see accuarcy for each class</h2>
+</div>
+
+
+
+<div class= 'container'>
+<h3><table><form action="" method='POST'>
+    <td>
+    <label>Select :</label>
+        <select name = "The_Model_Name">    
+        {% for model in ML_Models %}
+        <option value = "{{ model }}" SELECTED>{{ model }}</option>
+        {% endfor %}
+    </select>
+    </td>
+    </form></table></div>
+
+
+{% endblock %}
